@@ -1,9 +1,0 @@
-/*
-    Filename: style.css
-    Description: Entry-point for our css files.
-                 This right now just imports the default 
-                 tailwind css files for usage.
-*/
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
