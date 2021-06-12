@@ -1,0 +1,13 @@
+{{!-SHOWS A SINGLE POST--}}
+
+<div class='comment-container'>    
+    {{>partials/post post=post}}
+
+    <button type="button" id="add-comment-button"><h1>Add a Comment!</h1></button>
+
+    <div class='comments'>
+        {{#each comments}}
+            {{>partials/comment comment=.}}
+        {{/each}}
+    </div>
+</div>
