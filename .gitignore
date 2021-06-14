@@ -103,5 +103,5 @@ dist
 # TernJS port file
 .tern-port
 
-# Webpack Bundle
-public/main.js
+# Compiled Assets
+dist/*
