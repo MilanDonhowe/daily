@@ -37,7 +37,7 @@ if (process.env.NODE_ENV !== 'production'){
 // The actual server logic starts here
 
 import express from 'express'
-import indexRouter from './routes/index'
+import indexRouter from './routes/indexRouter'
 import { createEngine } from 'express-react-views'
 
 
@@ -62,9 +62,16 @@ app.set('views', __dirname + '/views')
 app.set('view engine', 'js')
 app.engine('js', createEngine())
 
+// serve static assets (css, images, etc.)
+app.use(express.static('dist/public'))
+
 // register index router
 app.get('/', indexRouter)
 
+/*
+app.get('*', (req: express.Request, res: express.Response) => {
+    res.render('notFound');
+})*/
 
 app.listen(port, () => {
     logger.info(`server listening on port ${port}`)

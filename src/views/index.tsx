@@ -5,7 +5,7 @@ export interface TestProps {
     title: string
 }
 
-function TestComponent(props: TestProps) {
+function IndexComponent(props: TestProps) {
     return (
         <Layout title={props.title}>
             <h1>{props.title}</h1>
@@ -15,6 +15,6 @@ function TestComponent(props: TestProps) {
 }
 
 
-export default TestComponent
+export default IndexComponent
 
 

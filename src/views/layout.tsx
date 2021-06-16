@@ -10,7 +10,7 @@ function Layout(props: LayoutProps) {
     <html>
       <head>
         <title>{props.title}</title>
-        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <link rel="stylesheet" href="main.css" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
